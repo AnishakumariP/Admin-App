@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+           /* display: flex;
+            justify-content: center;
+            align-items: center;
+            /*height: 100vh;*/
+        }
+        .container {
+        margin:40px auto;
+            padding: 40px;
+            /*background-color: #fff;*/
+            background: #CCCCFF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 35%;
+            height: 400px
+        }
+        h1 {
+            text-align: center;
+            color: #DE3163;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            color: #800000;
+        }
+        input[type="text"], input[type="password"] {
+            margin: 15px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            background-color: navy;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            width: 30%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <h1>Admin Login</h1>
+        <form action="log" method="post">
+            <label for="uname">UserName:</label>
+            <input type="text" id="uname" name="uname">
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" name="pass"><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
